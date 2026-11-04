@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <MelanopsinMinimumSdkVersion Condition="'$(MelanopsinMinimumSdkVersion)' == ''">10.0.100</MelanopsinMinimumSdkVersion>
+    <CompilerGeneratedFilesOutputPath>$(IntermediateOutputPath)generated</CompilerGeneratedFilesOutputPath>
+  </PropertyGroup>
+
+  <Target Name="ValidateMelanopsinSdkVersion" BeforeTargets="PrepareForBuild">
+    <Error Condition="$([MSBuild]::VersionLessThan('$(NETCoreSdkVersion)', '$(MelanopsinMinimumSdkVersion)'))"
+           Text="Melanopsin.Mathematics requires the .NET SDK $(MelanopsinMinimumSdkVersion) or newer. Current SDK: $(NETCoreSdkVersion)." />
+  </Target>
+</Project>

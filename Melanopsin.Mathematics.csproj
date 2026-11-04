@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+    <PackageId>Melanopsin.Mathematics</PackageId>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Copyright>Copyright (c) 2026 Liehumao Technology (Fuzhou) Co., Ltd.</Copyright>
+    <PackageTags>math;geometry;linear-algebra;vectors;matrices</PackageTags>
+    <RootNamespace>Melanopsin.Mathematics</RootNamespace>
+    <Description>General-purpose math, geometry, vectors, matrices, and quaternions for .NET.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
